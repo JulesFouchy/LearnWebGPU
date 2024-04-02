@@ -115,7 +115,7 @@ textureDesc.format = WGPUTextureFormat_RGBA8Unorm;
 
 ### Misc
 
-Like buffers, textures must **declare their intended usage**, so that they can be places in more appropriate parts of the memory by the GPU's memory allocator.
+Like buffers, textures must **declare their intended usage**, so that they can be placed in more appropriate parts of the memory by the GPU's memory allocator.
 
 In order to be able to **copy pixel data from C++**, the texture needs the `CopyDst` usage. And we will then use the texture by **sampling it from a shader**, so it must be declared with the `TextureBinding` usage:
 
